@@ -44,7 +44,7 @@ export default function ProjectCard({
           alt={imageProps.alt}
           width={imageProps.width}
           height={imageProps.height}
-          className="rounded-lg mb-4"
+          className="rounded-lg mb-4 self-center"
         />
         <CardTitle className="text-zinc-200">{title}</CardTitle>
         <CardDescription className="text-zinc-400">

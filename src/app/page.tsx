@@ -69,7 +69,6 @@ export default function DeveloperLanding() {
         </div>
       </header>
 
-      {/* Hero Section */}
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto text-center">
           <div className="mb-8">
@@ -82,13 +81,14 @@ export default function DeveloperLanding() {
             />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
-            Olá, eu sou um
+            Olá, sou
             <br />
-            Desenvolvedor Full Stack
+            José Manoel Sanches Malassise
           </h1>
           <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto">
-            Especializado em desenvolvimento web moderno com mais de 3 anos de
-            experiência criando soluções inovadoras e escaláveis
+            Desenvolvedor Front-end. Especializado em desenvolvimento web
+            moderno com mais de 4 anos de experiência criando soluções
+            inovadoras, escaláveis e performáticas.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700" asChild>
@@ -112,23 +112,34 @@ export default function DeveloperLanding() {
         </div>
       </section>
 
-      {/* About Section */}
       <section id="about" className="py-20 px-4 bg-slate-900/50">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">Sobre Mim</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center justify-center">
             <div>
               <p className="text-lg text-slate-300 mb-6">
-                Sou um desenvolvedor apaixonado por tecnologia e inovação, com
-                foco em criar experiências digitais excepcionais. Minha jornada
-                começou há mais de 3 anos e desde então venho me especializando
-                em tecnologias modernas de desenvolvimento web.
+                Comecei na programação quando estava no ensino médio, onde
+                participei do projeto de robótica que tínhamos no colégio, onde
+                competi e aprendi a programar em Java (Android Studio) e a
+                utilizar física e mecânica em conjunto. Finalizando essa etapa
+                sendo campeão estadual e finalista nacional na FTC (First Tech
+                Challenge).
               </p>
               <p className="text-lg text-slate-300 mb-6">
-                Tenho experiência sólida em desenvolvimento front-end e
-                back-end, sempre buscando as melhores práticas e padrões de
-                código. Adoro trabalhar em equipe e contribuir para projetos que
-                fazem a diferença.
+                Após o período do Ensino Médio participei da competição Inova
+                SENAI no qual fui finalista desenvolvendo um projeto de
+                Marketplace para jogos, contas e itens de jogos chamado
+                Tradetool, nesse período comecei o desenvolvimento web e conheci
+                tecnologias como HTML, CSS, Javascript e React.
+              </p>
+              <p className="text-lg text-slate-300 mb-6">
+                Após finalizada a competição Inova SENAI, comecei a estudar
+                programação web e desenvolvimento de aplicativos mobile.
+                Entrando assim no curso de Análise e Desenvolvimento de Sistemas
+                e no primeiro mês já consegui meu primeiro estágio. Finalizei o
+                curso realizando diversos projetos práticos realizados e
+                entregues e desde então sigo na área sempre buscando
+                aprimoramento dos meus conhecimentos.
               </p>
               <div className="flex space-x-4">
                 <Button
@@ -182,7 +193,6 @@ export default function DeveloperLanding() {
         </div>
       </section>
 
-      {/* Skills Section */}
       <section id="skills" className="py-20 px-4">
         <div className="container mx-auto">
           <h2 className="text-4xl text-zinc-100 font-bold text-center mb-12">
@@ -199,10 +209,16 @@ export default function DeveloperLanding() {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary">Next.js</Badge>
+                  <Badge variant="secondary">React</Badge>
                   <Badge variant="secondary">TypeScript</Badge>
+                  <Badge variant="secondary">JavaScript</Badge>
+                  <Badge variant="secondary">HTML</Badge>
+                  <Badge variant="secondary">CSS</Badge>
                   <Badge variant="secondary">Tailwind CSS</Badge>
                   <Badge variant="secondary">Material-UI</Badge>
                   <Badge variant="secondary">Redux</Badge>
+                  <Badge variant="secondary">Better Auth</Badge>
+                  <Badge variant="secondary">Next Auth</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -216,10 +232,13 @@ export default function DeveloperLanding() {
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
+                  <Badge variant="secondary">Nest.js</Badge>
+                  <Badge variant="secondary">Adonis.js</Badge>
+                  <Badge variant="secondary">TypeScript</Badge>
                   <Badge variant="secondary">Node.js</Badge>
                   <Badge variant="secondary">Prisma</Badge>
                   <Badge variant="secondary">PostgreSQL</Badge>
-                  <Badge variant="secondary">MongoDB</Badge>
+                  <Badge variant="secondary">MySQL</Badge>
                   <Badge variant="secondary">REST APIs</Badge>
                 </div>
               </CardContent>
@@ -237,7 +256,12 @@ export default function DeveloperLanding() {
                   <Badge variant="secondary">Git</Badge>
                   <Badge variant="secondary">Vercel</Badge>
                   <Badge variant="secondary">Figma</Badge>
+                  <Badge variant="secondary">Docker</Badge>
                   <Badge variant="secondary">Vite</Badge>
+                  <Badge variant="secondary">Stripe</Badge>
+                  <Badge variant="secondary">Polar</Badge>
+                  <Badge variant="secondary">Supabase</Badge>
+                  <Badge variant="secondary">Neon</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -245,7 +269,6 @@ export default function DeveloperLanding() {
         </div>
       </section>
 
-      {/* Projects Section */}
       <section id="projects" className="py-20 px-4 bg-slate-900/50">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">
@@ -260,89 +283,66 @@ export default function DeveloperLanding() {
                 height: 200,
               }}
               title="Resume Snap"
-              description="Plataforma de criação de currículos e conversão para PDF com Next.js, Prisma e Stripe"
+              description="Plataforma de criação de currículos e conversão para PDF com Next.js, Prisma e Stripe."
               skills={[
                 "Next.js",
                 "Tailwind CSS",
                 "Prisma",
                 "Stripe",
                 "PostgreSQL",
+                "Neon",
+                "Better Auth",
               ]}
               codeLink="https://github.com/zesanches/resume-snap"
               demoLink="https://resume-snap-app.vercel.app/"
             />
 
-            <Card className="bg-slate-800 border-slate-700 hover:border-blue-500 transition-colors">
-              <CardHeader>
-                <Image
-                  src="/task-management-app.png"
-                  alt="Task Manager Project"
-                  width={400}
-                  height={200}
-                  className="rounded-lg mb-4"
-                />
-                <CardTitle>Task Manager</CardTitle>
-                <CardDescription>
-                  Aplicativo de gerenciamento de tarefas com Redux e Material-UI
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="outline">React</Badge>
-                  <Badge variant="outline">Redux</Badge>
-                  <Badge variant="outline">Material-UI</Badge>
-                </div>
-                <div className="flex space-x-2">
-                  <Button size="sm" variant="outline">
-                    <Github className="mr-2 h-4 w-4" />
-                    Código
-                  </Button>
-                  <Button size="sm">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Demo
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+            <ProjectCard
+              imageProps={{
+                src: "/react-chatbot_image.png",
+                alt: "React Chatbot Project (Imagem gerada por IA)",
+                width: 500,
+                height: 200,
+              }}
+              title="React Chatbot (Imagem gerada por IA)"
+              description="Um componente que será exportado em forma de biblioteca para a comunidade usar. Será um chatbot que poderá compreender o contexto do site em que está sendo aplicado e assim podendo atender dúvidas de clientes e usuários."
+              skills={[
+                "React",
+                "TypeScript",
+                "API Prompt",
+                "OpenAI",
+                "LLMs Context",
+              ]}
+              codeLink="https://github.com/zesanches/react-chatbot"
+              demoLink="https://react-chatbot-app.vercel.app/"
+            />
 
-            <Card className="bg-slate-800 border-slate-700 hover:border-blue-500 transition-colors">
-              <CardHeader>
-                <Image
-                  src="/social-media-dashboard-analytics.png"
-                  alt="Analytics Dashboard"
-                  width={400}
-                  height={200}
-                  className="rounded-lg mb-4"
-                />
-                <CardTitle>Analytics Dashboard</CardTitle>
-                <CardDescription>
-                  Dashboard de analytics com gráficos interativos e real-time
-                  data
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="outline">TypeScript</Badge>
-                  <Badge variant="outline">Chart.js</Badge>
-                  <Badge variant="outline">WebSocket</Badge>
-                </div>
-                <div className="flex space-x-2">
-                  <Button size="sm" variant="outline">
-                    <Github className="mr-2 h-4 w-4" />
-                    Código
-                  </Button>
-                  <Button size="sm">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Demo
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+            <ProjectCard
+              imageProps={{
+                src: "/ad-copy-helper.png",
+                alt: "Ad Copy Helper (WIP)",
+                width: 500,
+                height: 200,
+              }}
+              title="Ad Copy Helper (WIP)"
+              description="Plataforma que utiliza Inteligência Artificial para gerar textos de anúncios otimizados para diferentes plataformas de mídia, como Facebook Ads, Instagram Ads, Google Ads, entre outros. A plataforma também oferece recursos de análise de dados e insights para ajudar os usuários a tomar decisões mais informadas."
+              skills={[
+                "Next.js",
+                "Tailwind CSS",
+                "Prisma",
+                "Stripe",
+                "PostgreSQL",
+                "Neon",
+                "Better Auth",
+                "OpenAI",
+              ]}
+              codeLink="https://github.com/zesanches/adcopy-helper"
+              demoLink="https://adcopy-helper.vercel.app/"
+            />
           </div>
         </div>
       </section>
 
-      {/* Education Section */}
       <section id="education" className="py-20 px-4">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">
@@ -415,7 +415,6 @@ export default function DeveloperLanding() {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section id="contact" className="py-20 px-4 bg-slate-900/50">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8">Vamos Trabalhar Juntos?</h2>
@@ -424,26 +423,44 @@ export default function DeveloperLanding() {
             Entre em contato e vamos conversar!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-              <Mail className="mr-2 h-5 w-5" />
-              contato@developer.com
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700" asChild>
+              <Link href="mailto:josemanoelmalassise@gmail.com">
+                <Mail className="mr-2 h-5 w-5" />
+                josemanoelmalassise@gmail.com
+              </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-slate-600">
-              <Linkedin className="mr-2 h-5 w-5" />
-              LinkedIn
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-slate-600"
+              asChild
+            >
+              <Link
+                href="https://www.linkedin.com/in/jos%C3%A9-malassise-353380227/"
+                target="_blank"
+              >
+                <Linkedin className="mr-2 h-5 w-5" />
+                LinkedIn
+              </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-slate-600">
-              <Github className="mr-2 h-5 w-5" />
-              GitHub
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-slate-600"
+              asChild
+            >
+              <Link href="https://github.com/zesanches" target="_blank">
+                <Github className="mr-2 h-5 w-5" />
+                GitHub
+              </Link>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="py-8 px-4 border-t border-slate-800">
         <div className="container mx-auto text-center text-slate-400">
-          <p>&copy; 2025 DevPortfolio. Todos os direitos reservados.</p>
+          <p>&copy; 2025 zesanches.dev. Todos os direitos reservados.</p>
         </div>
       </footer>
     </div>
