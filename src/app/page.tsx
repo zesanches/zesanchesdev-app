@@ -355,15 +355,21 @@ export default function DeveloperLanding() {
               </h3>
               <Card className="bg-slate-800 border-slate-700 mb-4">
                 <CardHeader>
-                  <CardTitle>Bacharelado em Ciência da Computação</CardTitle>
-                  <CardDescription>
-                    Universidade Federal • 2020 - 2024
+                  <CardTitle className="text-zinc-100">
+                    Análise e Desenvolvimento de Sistemas
+                  </CardTitle>
+                  <CardDescription className="text-zinc-300">
+                    Universidade Positivo • 2022 - 2024
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-slate-300">
-                    Formação sólida em algoritmos, estruturas de dados,
-                    engenharia de software e desenvolvimento de sistemas.
+                  <p className="text-slate-200">
+                    Formação sólida em estruturas de dados, lógica de
+                    programação, desenvolvimento de sistemas. Diversos projetos
+                    práticos desenvolvidos previamente à conclusão do curso,
+                    incluindo aplicativo para gerenciamento de salas de cinema e
+                    venda de ingressos e um sistema de gerenciamento de alunos
+                    para um colégio.
                   </p>
                 </CardContent>
               </Card>
@@ -376,37 +382,28 @@ export default function DeveloperLanding() {
               <div className="space-y-4">
                 <Card className="bg-slate-800 border-slate-700">
                   <CardHeader>
-                    <CardTitle className="text-lg">
-                      Next.js Complete Course
+                    <CardTitle className="text-lg text-zinc-100">
+                      Fundamentos do Next.js
                     </CardTitle>
-                    <CardDescription>Vercel • 2023</CardDescription>
+                    <CardDescription>Rocketseat • 2025</CardDescription>
                   </CardHeader>
                 </Card>
 
                 <Card className="bg-slate-800 border-slate-700">
                   <CardHeader>
-                    <CardTitle className="text-lg">
-                      Advanced TypeScript
+                    <CardTitle className="text-lg text-zinc-100">
+                      React Completo
                     </CardTitle>
-                    <CardDescription>TypeScript Academy • 2023</CardDescription>
+                    <CardDescription>Origamid • 2024</CardDescription>
                   </CardHeader>
                 </Card>
 
                 <Card className="bg-slate-800 border-slate-700">
                   <CardHeader>
-                    <CardTitle className="text-lg">
-                      Redux Toolkit Mastery
+                    <CardTitle className="text-lg text-zinc-100">
+                      Fundamento do React Native
                     </CardTitle>
-                    <CardDescription>Redux University • 2022</CardDescription>
-                  </CardHeader>
-                </Card>
-
-                <Card className="bg-slate-800 border-slate-700">
-                  <CardHeader>
-                    <CardTitle className="text-lg">
-                      Database Design with Prisma
-                    </CardTitle>
-                    <CardDescription>Prisma Academy • 2022</CardDescription>
+                    <CardDescription>Rocketseat • 2025</CardDescription>
                   </CardHeader>
                 </Card>
               </div>
